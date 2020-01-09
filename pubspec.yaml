@@ -24,6 +24,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   dio: ^3.0.8
+  flutter_swiper : ^1.1.6
+  flutter_screenutil: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +47,18 @@ flutter:
   assets:
     - images/logo.png
     - images/user.png
+    - images/mine_top.png
+    - images/mine_user.png
+    - images/mine_fukuan.png
+    - images/mine_shouhuo.png
+    - images/mine_weixiu.png
+    - images/mine_number.png
+    - images/mine_youhui.png
+    - images/mine_center.png
+    - images/mine_home.png
+    - images/mine_F.png
+    - images/mine_gift.png
+    - images/mine_setting.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

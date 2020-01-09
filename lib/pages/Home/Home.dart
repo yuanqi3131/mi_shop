@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mi_shop/components/HeaderNav.dart';
 import 'package:mi_shop/http/index.dart';
 import 'package:mi_shop/http/api.dart';
-import 'package:mi_shop/components/Nav.dart';
+import 'package:mi_shop/pages/Home/Nav.dart';
+import 'package:mi_shop/pages/Home/Home_Main.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -79,7 +80,11 @@ class Page extends State<Home> {
                     height: 18,
                   ),
                 )),
-            new Nav(tabs: pageData)
+            new Nav(tabs: pageData),
+            Expanded(
+              child: new HomeMain(
+                  initData: pageData.length > 0 ? pageData['data'] : Map()),
+            )
           ],
         ),
       ),

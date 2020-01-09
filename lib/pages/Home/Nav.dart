@@ -18,7 +18,16 @@ class MyComponent extends State<Nav> {
             child: new ListView(
                 scrollDirection: Axis.horizontal, children: handlerData()),
           ),
-          new Text('12'),
+          new Container(
+            decoration: new BoxDecoration(color: Color(0xfff2f2f2)),
+            child: new Icon(
+              Icons.keyboard_arrow_down,
+              color: Color(0xffbdbdbd),
+            ),
+          )
+          // new IconButton(
+          //   icon: Icon(Icons.keyboard_arrow_down),
+          // ),
         ],
       ),
     );
@@ -36,7 +45,7 @@ class MyComponent extends State<Nav> {
           child: new GestureDetector(
             child: new Text(
               item['name'],
-              style: TextStyle(fontSize: 12),
+              style: TextStyle(fontSize: 12, color: Color(0xff747474)),
             ),
           ),
         ));

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mi_shop/pages/Home.dart';
+import 'package:mi_shop/pages/Home/Home.dart';
 import 'package:mi_shop/pages/Category.dart';
 import 'package:mi_shop/pages/Cart.dart';
 import 'package:mi_shop/pages/Mine.dart';
